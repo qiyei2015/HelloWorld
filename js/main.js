@@ -6,8 +6,6 @@ $(document).ready(function () {
 
     paper.setup(document.getElementById("mainCanvas"));
     //todo
-
-
     // var c
     // for (var x = 25 ; x < 400 ; x += 50){
     //     for (var y = 25 ; y < 400 ; y += 50){

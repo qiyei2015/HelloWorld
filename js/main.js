@@ -33,4 +33,41 @@ $(document).ready(function () {
     paper.view.draw();
 
     console.log("main.js loaded");
+
+    // sayhello();
+    const f = sayhello;
+    f();
+    var o = {
+        message: "init"
+    }
+    fobject(o);
+
+    console.log("after fobject: o.message:=" + o.message);
+
 });
+
+function sayhello() {
+    /**
+     * 弹出对话框
+     */
+    alert(getGreeting());
+    console.log("sayhello");
+}
+
+function getGreeting() {
+    return "Hello world " + avg(3,5);
+}
+
+/**
+ * 定义函数
+ * @param a
+ * @param b
+ */
+function avg(a,b) {
+    return (a + b) / 2;
+}
+
+function fobject(o) {
+    o.message = "fobject";
+}
+
